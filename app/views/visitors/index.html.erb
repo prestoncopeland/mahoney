@@ -9,7 +9,7 @@
                 <div class="large-6 columns large-centered">
                   <ul class="button-group even-2">
                     <li><%= link_to 'About', page_path('about'), {class: "button"} %></li>
-                    <li><%= link_to 'Contact', page_path('contact'), {class: "button"} %></li>
+                    <li><%= link_to 'Contact', new_contact_path, {class: "button"} %></li>
                   </ul>
                 </div>
               </div>
@@ -22,7 +22,7 @@
               <h2 style="color:white">The Mahoneys Are All About Marriage!</h2>
               <p>We’re a husband-and-wife pair committed to making your special day as special as ours was.
               <p>Interested in an officiation?</p>
-              <a href="#" class="secondary small button">Get in touch →</a>
+              <%= link_to 'Get in touch →', new_contact_path, {class: "secondary small button"} %>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
                 <p>We're available for evening ceremonies during the week, and all day during the weekend.</p>
               </div>
               <div class="large-3 columns">
-                <a href="#" class="radius button right">Contact Us</a>
+                <%= link_to 'Contact Us', new_contact_path, {class: "radius button right"} %>
               </div>
             </div>
           </div>
